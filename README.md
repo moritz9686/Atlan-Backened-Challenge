@@ -174,7 +174,8 @@ each response to the form becomes a row in the sheet, and questions in the form 
          ```
     - **Route to export and download **
         - ```shell   
-                 async function exportData(req, res) {
+          
+           async function exportData(req, res) {
     
          pool.query('SELECT * FROM client_income_data',
          function(err, results, fields) {
