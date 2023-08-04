@@ -86,8 +86,8 @@ to fix it when the rules generate a flag.
     - **Created a sample Mysql based relational database**
         - ```shell   
            CREATE DATABASE atlan;
-       USE atlan;
-       CREATE TABLE client_income_data(
+           USE atlan;
+           CREATE TABLE client_income_data(
            client_id SERIAL PRIMARY KEY,
            client_email VARCHAR(255),
            client_name VARCHAR(255), 
@@ -225,10 +225,10 @@ participated in the exercise
         - ```shell   
                 const sendmsg = async (req,res)=>{
             const {client_email, client_name, income_per_annum, savings_per_annum, mobile_number} = req.body;
-         var response = unirest("POST", "https://www.fast2sms.com/dev/bulkV2");
-         response.headers({
-         "authorization": process.env.API_KEY
-         });
+           var response = unirest("POST", "https://www.fast2sms.com/dev/bulkV2");
+           response.headers({
+            "authorization": process.env.API_KEY
+            });
 
           response.form({
           "message": `Your Details :\n Email ID :${client_email}\n Name : ${client_name}\n Income Per Annum: ${income_per_annum}\n Savings Per Annum: ${savings_per_annum}\n Contact : ${mobile_number}\n Thankyou for your  response`,
