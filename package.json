@@ -1,0 +1,30 @@
+{
+  "name": "atlan-backend-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "devStart": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "fast-csv": "^4.3.6",
+    "fast-two-sms": "^3.0.0",
+    "fs": "0.0.1-security",
+    "google-translate-api": "^2.3.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.5.2",
+    "translate": "^1.2.3",
+    "translate-google": "^1.4.3",
+    "unirest": "^0.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
